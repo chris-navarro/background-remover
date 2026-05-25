@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background Remover</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Background Remover</h1>
+
+    <div class="upload-section">
+      <div class="upload-row">
+        <input type="file" id="imageInput" />
+        <button id="removeBtn">Remove Background</button>
+      </div>
+    </div>
+
+    <!-- Progress Status Indicator -->
+    <div id="loadingStatus" class="status-container">
+      <div class="spinner"></div>
+      <p>Processing image... Please wait.</p>
+    </div>
+
+    <!-- Results Container -->
+    <div class="result-container">
+      <div class="result">
+        <img id="resultImage"/>
+      </div>
+      
+      <!-- New layout container to force the button to the far right -->
+      <div class="button-row">
+        <a id="downloadLink" download class="download-btn">Download Image</a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
